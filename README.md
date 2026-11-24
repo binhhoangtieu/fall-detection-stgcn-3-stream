@@ -10,10 +10,12 @@ The repository contains the pose-extraction script, the training and evaluation 
 ## Repository layout
 
 /data
+
   custom_all_v2.npz           Processed MV-Fall skeleton sequences (see "Data format")
   videos_v2_public.csv        Per-clip metadata (anonymised)
   
 /code
+
   02_train_protocols_v2.ipynb Full model under the three protocols (E0 random split, E1 LOSO, E3 cross-view)
   03_baselines_ablation_E1.ipynb  Baselines and ablation, part 1 (ST-GCN, 2s-AGCN, LSTM, J+M, no skip, no adaptive, raw bone)
   04_ablation_tierB_E1.ipynb  Ablation, part 2 (J, M, A, J+A, M+A, J+M without adaptive, GRU)
