@@ -8,17 +8,16 @@ Code and processed data for the paper
 The repository contains the pose-extraction script, the training and evaluation notebooks, the processed skeleton sequences of the MV-Fall dataset with participant and camera-view labels, and the scripts that produce the figures and latency measurements of the paper.
 
 ## Repository layout
-
+```
 data/
   custom_all_v2.npz           Processed MV-Fall skeleton sequences (see "Data format")
   videos_v2_public.csv        Per-clip metadata (anonymised)
-  
 colab/
   02_train_protocols_v2.ipynb Full model under the three protocols (E0 random split, E1 LOSO, E3 cross-view)
   03_baselines_ablation_E1.ipynb  Baselines and ablation, part 1 (ST-GCN, 2s-AGCN, LSTM, J+M, no skip, no adaptive, raw bone)
   04_ablation_tierB_E1.ipynb  Ablation, part 2 (J, M, A, J+A, M+A, J+M without adaptive, GRU)
   01_extract_keypoints_v2.ipynb   Pose extraction on Colab (optional alternative to the script)
-
+```
 
 ## Data format
 
